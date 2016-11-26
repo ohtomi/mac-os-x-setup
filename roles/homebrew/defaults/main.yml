@@ -9,6 +9,7 @@ homebrew_cask_packages:
   - { name: java }
   # developer tool
   - { name: iterm2 }
+  - { name: atom }
   - { name: google-chrome }
   - { name: jetbrains-toolbox }
   # other tool

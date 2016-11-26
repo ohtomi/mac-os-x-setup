@@ -9,10 +9,6 @@
 - name: Update Homebrew
   homebrew:
     update_homebrew: yes
-  register: homebrew_update_homebrew_result
-
-- name: Show result 'Update Homebrew'
-  debug: var=homebrew_update_homebrew_result.stdout_lines
 
 - name: Install Homebrew cask packages
   homebrew_cask:
@@ -20,10 +16,6 @@
     state: present
   with_items:
     - "{{ homebrew_cask_packages }}"
-  register: homebrew_install_homebrew_cask_packages_result
-
-- name: Show result 'Install Homebrew cask packages'
-  debug: var=homebrew_install_homebrew_cask_packages_result.stdout_lines
 
 - name: Install Homebrew packages
   homebrew:
@@ -32,7 +24,3 @@
     state: "{{ item.state | default('latest') }}"
   with_items:
     - "{{ homebrew_packages }}"
-  register: homebrew_install_homebrew_packages_result
-
-- name: Show result 'Install Homebrew packages'
-  debug: var=homebrew_install_homebrew_packages_result.stdout_lines

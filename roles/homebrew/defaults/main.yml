@@ -1,0 +1,44 @@
+---
+homebrew_taps:
+  - { tap: caskroom/cask }
+
+homebrew_cask_packages:
+  # standard tool
+  - { name: 1password }
+  # programming language
+  - { name: java }
+  # developer tool
+  - { name: iterm2 }
+  - { name: google-chrome }
+  - { name: jetbrains-toolbox }
+  # other tool
+  - { name: amazon-drive }
+  - { name: kindle }
+
+homebrew_packages:
+  # shell
+  - { name: bash }
+  # version control system
+  - { name: git }
+  - { name: mercurial }
+  - { name: subversion }
+  # openssl
+  - { name: readline }
+  - { name: openssl }
+  - { name: openssl, state: linked, install_options: force }
+  # programming language
+  - { name: go }
+  - { name: kotlin }
+  - { name: scala }
+  # developer tool
+  - { name: curl }
+  - { name: ghq, install_options: completions }
+  - { name: hub }
+  - { name: jq }
+  - { name: peco }
+  - { name: reattach-to-user-namespace }
+  - { name: tig }
+  - { name: tmux }
+  - { name: tree }
+  - { name: vim }
+  - { name: wget }

@@ -28,8 +28,13 @@ homebrew_packages:
   - { name: openssl }
   - { name: openssl, state: linked, install_options: force }
   # programming language
+  - { name: haskell-stack }
   - { name: go }
   - { name: kotlin }
+  - { name: nodebrew }
+  - { name: pyenv }
+  - { name: pyenv-virtualenv }
+  - { name: rbenv }
   - { name: scala }
   # developer tool
   - { name: curl }

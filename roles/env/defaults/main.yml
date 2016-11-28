@@ -1,5 +1,5 @@
 ---
-ghq_root: "{{ ansible_user_dir }}/src/github.com"
+env_ghq_root: "{{ ansible_user_dir }}/src/github.com"
 
-git_repositories:
-  - { repo: "ssh://git@github.com/ohtomi/dotfiles.git", dest: "{{ ghq_root }}/ohtomi/dotfiles" }
+env_git_repositories:
+  - { repo: "ssh://git@github.com/ohtomi/dotfiles.git", dest: "{{ env_ghq_root }}/ohtomi/dotfiles" }

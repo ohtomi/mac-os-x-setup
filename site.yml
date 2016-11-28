@@ -4,3 +4,4 @@
   connection: local
   roles:
     - { role: homebrew, tags: [ homebrew ] }
+    - { role: env, tags: [ env ] }

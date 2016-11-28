@@ -1,6 +1,7 @@
 ---
 homebrew_taps:
   - { tap: caskroom/cask }
+  - { tap: ohtomi/repos }
 
 homebrew_cask_packages:
   # standard tool
@@ -31,7 +32,7 @@ homebrew_packages:
   - { name: haskell-stack }
   - { name: go }
   - { name: kotlin }
-  - { name: nodebrew }
+  - { name: ohtomi/repos/nodebrew }
   - { name: pyenv }
   - { name: pyenv-virtualenv }
   - { name: rbenv }

@@ -7,11 +7,7 @@
   with_items:
     - "{{ env_git_repositories }}"
 
-- name: Create symlinks
-  file:
-    src: "{{ item.src }}"
-    dest: "{{ item.dest }}"
-    force: yes
-    state: link
-  with_items:
-    - "{{ env_symlinks }}"
+- name: Run dotfiles setup
+  shell: bash setup.sh
+  args:
+    chdir: "{{ env_ghq_root }}/ohtomi/dotfiles"

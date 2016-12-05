@@ -1,0 +1,3 @@
+---
+lang_pip_packages:
+  - { name: awscli }

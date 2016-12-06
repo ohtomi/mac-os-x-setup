@@ -7,3 +7,13 @@
     - "{{ lang_pip_packages }}"
   notify:
     - Rehash pyenv
+
+- name: Install python packages via pip3
+  pip:
+    name: "{{ item.name }}"
+    executable: pip3
+    state: "{{ item.state | default('latest') }}"
+  with_items:
+    - "{{ lang_pip3_packages }}"
+  notify:
+    - Rehash pyenv

@@ -1,3 +1,6 @@
 ---
 lang_pip_packages:
   - { name: awscli }
+
+lang_pip3_packages:
+  - { name: acdcli }

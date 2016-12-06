@@ -28,6 +28,9 @@ homebrew_packages:
   - { name: readline }
   - { name: openssl }
   - { name: openssl, state: linked, install_options: force }
+  # ansible
+  - { name: python }
+  - { name: ansible }
   # programming language
   - { name: haskell-stack }
   - { name: go }
@@ -35,6 +38,7 @@ homebrew_packages:
   - { name: ohtomi/repos/nodebrew }
   - { name: pyenv }
   - { name: pyenv-virtualenv }
+  - { name: python3 }
   - { name: rbenv }
   - { name: scala }
   # developer tool

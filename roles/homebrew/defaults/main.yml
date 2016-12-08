@@ -6,6 +6,7 @@ homebrew_taps:
 homebrew_cask_packages:
   # standard tool
   - { name: 1password }
+  - { name: google-japanese-ime }
   # programming language
   - { name: java }
   # developer tool

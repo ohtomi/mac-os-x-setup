@@ -47,6 +47,7 @@ homebrew_packages:
   - { name: curl }
   - { name: ghq, install_options: completions }
   - { name: hub }
+  - { name: jo }
   - { name: jq }
   - { name: peco }
   - { name: reattach-to-user-namespace }

@@ -51,6 +51,7 @@ homebrew_packages:
   - { name: jq }
   - { name: peco }
   - { name: reattach-to-user-namespace }
+  - { name: terraform }
   - { name: tig }
   - { name: tmux }
   - { name: tree }

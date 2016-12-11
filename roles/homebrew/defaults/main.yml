@@ -55,5 +55,6 @@ homebrew_packages:
   - { name: tig }
   - { name: tmux }
   - { name: tree }
+  - { name: vault }
   - { name: vim }
   - { name: wget }

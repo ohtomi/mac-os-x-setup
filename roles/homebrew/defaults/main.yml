@@ -44,6 +44,7 @@ homebrew_packages:
   - { name: rbenv }
   - { name: scala }
   # developer tool
+  - { name: coreutils }
   - { name: curl }
   - { name: ghq, install_options: completions }
   - { name: hub }

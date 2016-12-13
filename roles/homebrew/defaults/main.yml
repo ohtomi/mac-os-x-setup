@@ -50,6 +50,7 @@ homebrew_packages:
   - { name: hub }
   - { name: jo }
   - { name: jq }
+  - { name: packer }
   - { name: peco }
   - { name: reattach-to-user-namespace }
   - { name: terraform }

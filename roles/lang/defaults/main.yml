@@ -1,6 +1,7 @@
 ---
 lang_pip_packages:
   - { name: awscli }
+  - { name: Sphinx }
 
 lang_pip3_packages:
   - { name: acdcli }

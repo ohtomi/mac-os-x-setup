@@ -48,10 +48,12 @@ homebrew_packages:
   - { name: curl }
   - { name: ghq, install_options: completions }
   - { name: hub }
+  - { name: imagemagick }
   - { name: jo }
   - { name: jq }
   - { name: packer }
   - { name: peco }
+  - { name: poppler }
   - { name: reattach-to-user-namespace }
   - { name: terraform }
   - { name: tig }

@@ -5,3 +5,9 @@ lang_pip_packages:
 
 lang_pip3_packages:
   - { name: acdcli }
+
+lang_ruby_version: 2.3.3
+
+lang_gem_packages:
+  - { name: bundler }
+  - { name: rake }

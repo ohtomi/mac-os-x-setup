@@ -2,3 +2,7 @@
 - name: Rehash pyenv
   shell: |
     pyenv rehash
+
+- name: Change Ruby version
+  shell: |
+    bash -cl 'rbenv global "{{ ruby_version }}"'

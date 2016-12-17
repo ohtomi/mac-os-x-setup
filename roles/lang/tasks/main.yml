@@ -17,3 +17,28 @@
     - "{{ lang_pip3_packages }}"
   notify:
     - Rehash pyenv
+
+- name: Install Ruby via rbenv
+  shell: bash -cl 'rbenv install "{{ lang_ruby_version }}"'
+  args:
+    creates: "/usr/local/var/rbenv/versions/{{ lang_ruby_version }}/bin/ruby"
+
+- name: Check if Ruby version is "{{ lang_ruby_version }}"
+  shell: bash -cl 'rbenv versions' | grep -F "* {{ lang_ruby_version }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Change Ruby version
+
+- name: Flush handlers
+  meta: flush_handlers
+
+- name: Install gem pacakges
+  gem:
+    name: "{{ item.name }}"
+    include_doc: yes
+    state: "{{ item.state | default('latest') }}"
+  with_items:
+    - "{{ lang_gem_packages }}"

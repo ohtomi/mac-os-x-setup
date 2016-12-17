@@ -11,3 +11,8 @@
   shell: bash setup.sh
   args:
     chdir: "{{ env_ghq_root }}/ohtomi/dotfiles"
+
+- name: Create workbench directory for kindlizer
+  file:
+    path: ~/workbench/kindlizer
+    state: directory

@@ -12,6 +12,18 @@
   args:
     chdir: "{{ env_ghq_root }}/ohtomi/dotfiles"
 
+- name: Create pkg directory
+  file:
+    path: ~/pkg
+    state: directory
+
+- name: Download pkg files
+  get_url:
+    url: "{{ item.url }}"
+    dest: "~/pkg/{{ item.file }}"
+  with_items:
+    - "{{ env_pkg_urls }}"
+
 - name: Create workbench directory for kindlizer
   file:
     path: ~/workbench/kindlizer

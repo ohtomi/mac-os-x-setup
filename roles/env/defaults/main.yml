@@ -4,3 +4,6 @@ env_ghq_root: "{{ ansible_user_dir }}/src/github.com"
 env_git_repositories:
   - { repo: "ssh://git@github.com/ohtomi/dotfiles.git", dest: "{{ env_ghq_root }}/ohtomi/dotfiles" }
   - { repo: "ssh://git@github.com/ohtomi/kindlizer.git", dest: "{{ env_ghq_root }}/ohtomi/kindlizer" }
+
+env_pkg_urls:
+  - { url: "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg", file: "pdftk_server-2.02-mac_osx-10.11-setup.pkg" }

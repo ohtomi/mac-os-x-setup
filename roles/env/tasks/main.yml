@@ -24,6 +24,11 @@
   with_items:
     - "{{ env_pkg_urls }}"
 
+- name: Run pkg installer
+  shell: sudo installer -package ~/pkg/{{ item.file }} -target /
+  with_items:
+    - "{{ env_pkg_urls }}"
+
 - name: Create workbench directory for kindlizer
   file:
     path: ~/workbench/kindlizer

@@ -33,3 +33,12 @@
   file:
     path: ~/workbench/kindlizer
     state: directory
+
+- name: Add /usr/local/bin/bash to /etc/shells
+  lineinfile:
+    dest: /etc/shells
+    line: /usr/local/bin/bash
+  become: yes
+
+- name: Change shell
+  shell: chsh -s /usr/local/bin/bash

@@ -1,4 +1,9 @@
 ---
+lang_go_packages:
+  - { name: goimports, path: golang.org/x/tools/cmd/goimports }
+  - { name: golint, path: github.com/golang/lint/golint }
+  - { name: gox, path: github.com/mitchellh/gox }
+
 lang_pip_packages:
   - { name: awscli }
   - { name: Sphinx }

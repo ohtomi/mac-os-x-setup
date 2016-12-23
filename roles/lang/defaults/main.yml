@@ -1,8 +1,12 @@
 ---
 lang_go_packages:
+  - { name: gocode, path: github.com/nsf/gocode }
+  - { name: godoc, path: golang.org/x/tools/cmd/godoc }
   - { name: goimports, path: golang.org/x/tools/cmd/goimports }
   - { name: golint, path: github.com/golang/lint/golint }
+  - { name: gore, path: github.com/motemen/gore }
   - { name: gox, path: github.com/mitchellh/gox }
+  - { name: pp, path: github.com/k0kubun/pp }
 
 lang_pip_packages:
   - { name: awscli }

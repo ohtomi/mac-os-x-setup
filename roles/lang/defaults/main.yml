@@ -17,6 +17,7 @@ lang_pip3_packages:
   - { name: acdcli }
   - { name: matplotlib }
   - { name: numpy }
+  - { name: pandas }
   - { name: scipy }
   - { name: scikit-learn }
 

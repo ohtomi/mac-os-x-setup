@@ -17,6 +17,7 @@ homebrew_cask_packages:
   - { name: docker }
   # other tool
   - { name: amazon-drive }
+  - { name: gyazo }
   - { name: kindle }
 
 homebrew_packages:

@@ -17,9 +17,11 @@ lang_pip3_packages:
   - { name: acdcli }
   - { name: jupyter }
   - { name: matplotlib }
+  - { name: nose }
   - { name: numpy }
   - { name: pandas }
   - { name: scipy }
+  - { name: scikit-image }
   - { name: scikit-learn }
 
 lang_ruby_version: 2.3.3

@@ -25,6 +25,7 @@ lang_pip3_packages:
   - { name: scipy }
   - { name: scikit-image }
   - { name: scikit-learn }
+  - { name: seaborn }
   - { name: tox }
 
 lang_ruby_version: 2.3.3

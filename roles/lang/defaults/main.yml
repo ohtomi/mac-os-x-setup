@@ -16,6 +16,7 @@ lang_pip_packages:
 
 lang_pip3_packages:
   - { name: acdcli }
+  - { name: bokeh }
   - { name: jupyter }
   - { name: matplotlib }
   - { name: nose }

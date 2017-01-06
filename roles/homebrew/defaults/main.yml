@@ -16,6 +16,7 @@ homebrew_cask_packages:
   - { name: google-chrome }
   - { name: jetbrains-toolbox }
   - { name: docker }
+  - { name: basictex }
   # other tool
   - { name: amazon-drive }
   - { name: gyazo }

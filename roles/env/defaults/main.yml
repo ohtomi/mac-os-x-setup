@@ -10,3 +10,11 @@ env_pkg_urls:
   - { url: "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg", file: "pdftk_server-2.02-mac_osx-10.11-setup.pkg" }
 
 env_shell: /usr/local/bin/bash
+
+env_setup_commands:
+  - { name: tlmgr, cwd: /Library/TeX/texbin/, shell: "tlmgr update --self --all", become: yes }
+  - { name: tlmgr, cwd: /Library/TeX/texbin/, shell: "tlmgr install ptex japanese-otf jfontmaps jsclasses", become: yes }
+  - { name: tlmgr, cwd: /Library/TeX/texbin/, shell: "tlmgr install cjk-gs-integrate", become: yes }
+  - { name: cjk-gs-integrate, cwd: /usr/local/texlive/2016basic/texmf-dist/scripts/cjk-gs-integrate, shell: "perl cjk-gs-integrate.pl --link-texmf --force", become: yes }
+  - { name: mktexlsr, cwd: /Library/TeX/texbin/, shell: "mktexlsr", become: yes }
+  - { name: updmap-sys, cwd: /Library/TeX/texbin/, shell: "updmap-sys --setoption kanjiEmbed hiragino-elcapitan-pron", become: yes }

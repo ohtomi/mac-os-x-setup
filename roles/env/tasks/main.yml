@@ -51,3 +51,12 @@
 
 - name: Flush handlers
   meta: flush_handlers
+
+- name: Run other setup command
+  shell: "{{ item.shell }}"
+  args:
+    chdir: "{{ item.cwd }}"
+    removes: "{{ item.name }}"
+  become: "{{ item.become | default('no') }}"
+  with_items:
+    - "{{ env_setup_commands }}"

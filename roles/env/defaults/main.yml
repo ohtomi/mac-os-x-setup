@@ -13,7 +13,7 @@ env_shell: /usr/local/bin/bash
 
 env_setup_commands:
   - { name: tlmgr, cwd: /Library/TeX/texbin/, shell: "tlmgr update --self --all", become: yes }
-  - { name: tlmgr, cwd: /Library/TeX/texbin/, shell: "tlmgr install ptex japanese-otf jfontmaps jsclasses", become: yes }
+  - { name: tlmgr, cwd: /Library/TeX/texbin/, shell: "tlmgr install collection-langjapanese", become: yes}
   - { name: tlmgr, cwd: /Library/TeX/texbin/, shell: "tlmgr install cjk-gs-integrate", become: yes }
   - { name: cjk-gs-integrate, cwd: /usr/local/texlive/2016basic/texmf-dist/scripts/cjk-gs-integrate, shell: "perl cjk-gs-integrate.pl --link-texmf --force", become: yes }
   - { name: mktexlsr, cwd: /Library/TeX/texbin/, shell: "mktexlsr", become: yes }

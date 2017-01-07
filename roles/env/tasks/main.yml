@@ -25,7 +25,8 @@
     - "{{ env_pkg_urls }}"
 
 - name: Run pkg installer
-  shell: sudo installer -package ~/pkg/{{ item.file }} -target /
+  shell: installer -package {{ lookup('env', 'HOME') }}/pkg/{{ item.file }} -target /
+  become: yes
   with_items:
     - "{{ env_pkg_urls }}"
 

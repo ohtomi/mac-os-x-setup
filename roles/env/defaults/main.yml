@@ -7,7 +7,7 @@ env_git_repositories:
   - { repo: "ssh://git@github.com/ohtomi/jupyter-notebook-notes.git", dest: "{{ env_ghq_root }}/ohtomi/jupyter-notebook-notes"}
 
 env_pkg_urls:
-  - { url: "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg", file: "pdftk_server-2.02-mac_osx-10.11-setup.pkg" }
+  - { name: pdftk, url: "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg", file: "pdftk_server-2.02-mac_osx-10.11-setup.pkg" }
 
 env_shell: /usr/local/bin/bash
 

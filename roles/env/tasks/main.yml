@@ -25,7 +25,7 @@
     - "{{ env_pkg_urls }}"
 
 - name: Run pkg installer
-  shell: installer -package {{ lookup('env', 'HOME') }}/pkg/{{ item.file }} -target /
+  shell: command -v {{ item.name }} || installer -package {{ lookup('env', 'HOME') }}/pkg/{{ item.file }} -target /
   become: yes
   with_items:
     - "{{ env_pkg_urls }}"

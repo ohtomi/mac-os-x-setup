@@ -8,3 +8,5 @@ env_git_repositories:
 
 env_pkg_urls:
   - { url: "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg", file: "pdftk_server-2.02-mac_osx-10.11-setup.pkg" }
+
+env_shell: /usr/local/bin/bash

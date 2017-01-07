@@ -1,0 +1,4 @@
+---
+- name: Change shell
+  shell: |
+    chsh -s "{{ env_shell }}"

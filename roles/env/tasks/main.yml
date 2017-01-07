@@ -40,5 +40,14 @@
     line: /usr/local/bin/bash
   become: yes
 
-- name: Change shell
-  shell: chsh -s /usr/local/bin/bash
+- name: Check if current shell is "{{ env_shell }}"
+  shell: bash -cl 'echo $SHELL' | grep -F "* {{ env_shell }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Change shell
+
+- name: Flush handlers
+  meta: flush_handlers

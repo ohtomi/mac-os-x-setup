@@ -34,14 +34,14 @@
     path: ~/workbench/kindlizer
     state: directory
 
-- name: Add /usr/local/bin/bash to /etc/shells
+- name: Add "{{ env_shell }}" to /etc/shells
   lineinfile:
     dest: /etc/shells
-    line: /usr/local/bin/bash
+    line: "{{env_shell }}"
   become: yes
 
 - name: Check if current shell is "{{ env_shell }}"
-  shell: bash -cl 'echo $SHELL' | grep -F "* {{ env_shell }}"
+  shell: bash -cl 'echo $SHELL' | grep -F "{{ env_shell }}"
   register: res
   check_mode: no
   failed_when: no

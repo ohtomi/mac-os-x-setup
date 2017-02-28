@@ -60,6 +60,7 @@ homebrew_packages:
   - { name: peco }
   - { name: poppler }
   - { name: reattach-to-user-namespace }
+  - { name: ohtomi/repos/sdkman-cli }
   - { name: terraform }
   - { name: tig }
   - { name: tmux }

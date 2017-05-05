@@ -48,6 +48,7 @@ homebrew_packages:
   # developer tool
   - { name: coreutils }
   - { name: curl }
+  - { name: ffmpeg }
   - { name: ghq, install_options: completions }
   - { name: ghr }
   - { name: ghostscript }

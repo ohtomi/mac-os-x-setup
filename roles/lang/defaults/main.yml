@@ -12,7 +12,6 @@ lang_go_packages:
 
 lang_pip_packages:
   - { name: awscli }
-  - { name: aws-vapor }
   - { name: Sphinx }
 
 lang_pip3_packages:

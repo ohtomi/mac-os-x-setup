@@ -15,7 +15,6 @@ lang_pip_packages:
   - { name: Sphinx }
 
 lang_pip3_packages:
-  - { name: acdcli }
   - { name: bokeh }
   - { name: jupyter }
   - { name: matplotlib }

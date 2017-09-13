@@ -12,6 +12,7 @@ homebrew_cask_packages:
   # developer tool
   - { name: iterm2 }
   - { name: atom }
+  - { name: visual-studio-code }
   - { name: google-chrome }
   - { name: jetbrains-toolbox }
   - { name: docker }

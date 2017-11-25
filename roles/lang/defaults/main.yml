@@ -1,5 +1,6 @@
 ---
 lang_go_packages:
+  - { name: go-assets-builder, path: github.com/jessevdk/go-assets-builder }
   - { name: gocode, path: github.com/nsf/gocode }
   - { name: godoc, path: golang.org/x/tools/cmd/godoc }
   - { name: goimports, path: golang.org/x/tools/cmd/goimports }

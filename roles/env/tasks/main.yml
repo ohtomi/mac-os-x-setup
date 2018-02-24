@@ -12,29 +12,6 @@
   args:
     chdir: "{{ env_ghq_root }}/ohtomi/dotfiles"
 
-- name: Create pkg directory
-  file:
-    path: ~/pkg
-    state: directory
-
-- name: Download pkg files
-  get_url:
-    url: "{{ item.url }}"
-    dest: "~/pkg/{{ item.file }}"
-  with_items:
-    - "{{ env_pkg_urls }}"
-
-- name: Run pkg installer
-  shell: command -v {{ item.name }} || installer -package {{ lookup('env', 'HOME') }}/pkg/{{ item.file }} -target /
-  become: yes
-  with_items:
-    - "{{ env_pkg_urls }}"
-
-- name: Create workbench directory for kindlizer
-  file:
-    path: ~/workbench/kindlizer
-    state: directory
-
 - name: Add "{{ env_shell }}" to /etc/shells
   lineinfile:
     dest: /etc/shells
@@ -52,12 +29,3 @@
 
 - name: Flush handlers
   meta: flush_handlers
-
-- name: Run other setup command
-  shell: "{{ item.shell }}"
-  args:
-    chdir: "{{ item.cwd }}"
-    removes: "{{ item.name }}"
-  become: "{{ item.become | default('no') }}"
-  with_items:
-    - "{{ env_setup_commands }}"

@@ -7,16 +7,12 @@ homebrew_taps:
 homebrew_cask_packages:
   # standard tool
   - { name: google-japanese-ime }
-  # programming language
-  - { name: java }
   # developer tool
   - { name: iterm2 }
-  - { name: atom }
   - { name: visual-studio-code }
   - { name: google-chrome }
   - { name: jetbrains-toolbox }
   - { name: docker }
-  - { name: basictex }
   # other tool
   - { name: amazon-drive }
   - { name: gyazo }
@@ -40,14 +36,11 @@ homebrew_packages:
   - { name: haskell-stack }
   - { name: go }
   - { name: dep }
-  - { name: groovy }
-  - { name: kotlin }
   - { name: ohtomi/repos/nodebrew }
   - { name: pyenv }
   - { name: pyenv-virtualenv }
   - { name: python3 }
   - { name: rbenv }
-  - { name: scala }
   # developer tool
   - { name: coreutils }
   - { name: curl }
@@ -62,7 +55,6 @@ homebrew_packages:
   - { name: jq }
   - { name: packer }
   - { name: peco }
-  - { name: poppler }
   - { name: reattach-to-user-namespace }
   - { name: ohtomi/repos/sdkman-cli }
   - { name: terraform }

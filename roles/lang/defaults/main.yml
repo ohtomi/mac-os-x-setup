@@ -27,7 +27,7 @@ lang_pip3_packages:
   - { name: seaborn }
   - { name: tox }
 
-lang_ruby_version: 2.3.3
+lang_ruby_version: 2.5.0
 
 lang_gem_packages:
   - { name: bundler }

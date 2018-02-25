@@ -32,3 +32,13 @@ lang_ruby_version: 2.3.3
 lang_gem_packages:
   - { name: bundler }
   - { name: rake }
+
+lang_java_version: 9.0.4-oracle
+
+lang_groovy_version: 2.4.9
+
+lang_scala_version: 2.12.4
+
+lang_kotlin_version: 1.2.21
+
+lang_gradle_version: 4.0

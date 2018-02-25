@@ -5,4 +5,24 @@
 
 - name: Change Ruby version
   shell: |
-    bash -cl 'rbenv global "{{ ruby_version }}"'
+    bash -cl 'rbenv global "{{ lang_ruby_version }}"'
+
+- name: Change Java version
+  shell: |
+    bash -cl 'sdk default java "{{ lang_java_version }}"'
+
+- name: Change Groovy version
+  shell: |
+    bash -cl 'sdk default groovy "{{ lang_groovy_version }}"'
+
+- name: Change Scala version
+  shell: |
+    bash -cl 'sdk default scala "{{ lang_scala_version }}"'
+
+- name: Change Kotlin version
+  shell: |
+    bash -cl 'sdk default kotlin "{{ lang_kotlin_version }}"'
+
+- name: Change Gradle version
+  shell: |
+    bash -cl 'sdk default gradle "{{ lang_gradle_version }}"'

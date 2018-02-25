@@ -47,3 +47,73 @@
     state: "{{ item.state | default('latest') }}"
   with_items:
     - "{{ lang_gem_packages }}"
+
+- name: Install Java via sdkman
+  shell: bash -cl 'sdk install java {{ lang_java_version }}'
+  args:
+    creates: "~/.sdkman/candidates/java/{{ lang_java_version }}/bin/java"
+
+- name: Check if Java version is "{{ lang_java_version }}"
+  shell: bash -cl 'sdk version java' | grep -F "* {{ lang_java_version }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Change Java version
+
+- name: Install Groovy via sdkman
+  shell: bash -cl 'sdk install groovy {{ lang_groovy_version }}'
+  args:
+    creates: "~/.sdkman/candidates/groovy/{{ lang_groovy_version }}/bin/groovy"
+
+- name: Check if Groovy version is "{{ lang_groovy_version }}"
+  shell: bash -cl 'sdk version groovy' | grep -F "* {{ lang_groovy_version }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Change Groovy version
+
+- name: Install Scala via sdkman
+  shell: bash -cl 'sdk install scala {{ lang_scala_version }}'
+  args:
+    creates: "~/.sdkman/candidates/scala/{{ lang_scala_version }}/bin/scala"
+
+- name: Check if Scala version is "{{ lang_scala_version }}"
+  shell: bash -cl 'sdk version scala' | grep -F "* {{ lang_scala_version }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Change Scala version
+
+- name: Install Kotlin via sdkman
+  shell: bash -cl 'sdk install kotlin {{ lang_kotlin_version }}'
+  args:
+    creates: "~/.sdkman/candidates/kotlin/{{ lang_kotlin_version }}/bin/kotlin"
+
+- name: Check if Kotlin version is "{{ lang_kotlin_version }}"
+  shell: bash -cl 'sdk version kotlin' | grep -F "* {{ lang_kotlin_version }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Change Kotlin version
+
+- name: Install Gradle via sdkman
+  shell: bash -cl 'sdk install gradle {{ lang_gradle_version }}'
+  args:
+    creates: "~/.sdkman/candidates/gradle/{{ lang_gradle_version }}/bin/gradle"
+
+- name: Check if Gradle version is "{{ lang_gradle_version }}"
+  shell: bash -cl 'sdk version gradle' | grep -F "* {{ lang_gradle_version }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Change Gradle version

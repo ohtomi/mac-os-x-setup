@@ -30,16 +30,13 @@ homebrew_packages:
   - { name: openssl }
   - { name: openssl, state: linked, install_options: force }
   # ansible
-  - { name: python }
   - { name: ansible }
   # programming language
   - { name: haskell-stack }
   - { name: go }
   - { name: dep }
   - { name: ohtomi/repos/nodebrew }
-  - { name: pyenv }
-  - { name: pyenv-virtualenv }
-  - { name: python3 }
+  - { name: python }
   - { name: rbenv }
   # developer tool
   - { name: coreutils }

@@ -19,6 +19,8 @@ lang_pip_packages:
   - { name: scikit-learn }
   - { name: seaborn }
   - { name: tox }
+  - { name: twine }
+  - { name: wheel }
 
 lang_ruby_version: 2.5.0
 

@@ -18,6 +18,7 @@ lang_pip_packages:
   - { name: scikit-image }
   - { name: scikit-learn }
   - { name: seaborn }
+  - { name: pipenv }
   - { name: tox }
   - { name: twine }
   - { name: wheel }

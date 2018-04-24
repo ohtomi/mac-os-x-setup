@@ -1,6 +1,6 @@
 # mac-os-x-setup
 
-Provisioning MacBook Pro using Ansible 2.x.
+This playbook provisions Mac OS X using Ansible 2.x.
 
 ## Usage
 

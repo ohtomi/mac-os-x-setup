@@ -11,6 +11,7 @@ lang_pip_packages:
   - { name: bokeh }
   - { name: jupyter }
   - { name: matplotlib }
+  - { name: mglearn }
   - { name: nose }
   - { name: numpy }
   - { name: pandas }

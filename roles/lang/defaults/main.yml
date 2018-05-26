@@ -10,6 +10,7 @@ lang_pip_packages:
   - { name: awscli }
   - { name: bokeh }
   - { name: jupyter }
+  - { name: jupyterlab }
   - { name: matplotlib }
   - { name: mglearn }
   - { name: nose }

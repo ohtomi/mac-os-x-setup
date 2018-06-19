@@ -32,3 +32,9 @@
     source ~/.sdkman/bin/sdkman-init.sh && sdk default gradle "{{ lang_gradle_version }}"
   args:
     executable: /bin/bash
+
+- name: Change sbt version
+  shell: |
+    source ~/.sdkman/bin/sdkman-init.sh && sdk default sbt "{{ lang_sbt_version }}"
+  args:
+    executable: /bin/bash

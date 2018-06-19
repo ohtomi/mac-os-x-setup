@@ -121,3 +121,20 @@
   changed_when: res.rc != 0
   notify:
     - Change Gradle version
+
+- name: Install sbt via sdkman
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install groovy {{ lang_sbt_version }}
+  args:
+    executable: /bin/bash
+    creates: "~/.sdkman/candidates/sbt/{{ lang_sbt_version }}/bin/sbt"
+
+- name: Check if sbt version is "{{ lang_sbt_version }}"
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk current sbt | grep -F "{{ lang_sbt_version }}"
+  args:
+    executable: /bin/bash
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Change sbt version

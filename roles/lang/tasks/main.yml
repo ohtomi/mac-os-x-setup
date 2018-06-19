@@ -38,12 +38,15 @@
     - "{{ lang_gem_packages }}"
 
 - name: Install Java via sdkman
-  shell: bash -cl 'sdk install java {{ lang_java_version }}'
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install java {{ lang_java_version }}
   args:
+    executable: /bin/bash
     creates: "~/.sdkman/candidates/java/{{ lang_java_version }}/bin/java"
 
 - name: Check if Java version is "{{ lang_java_version }}"
-  shell: bash -cl 'sdk version java' | grep -F "* {{ lang_java_version }}"
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk current java | grep -F "{{ lang_java_version }}"
+  args:
+    executable: /bin/bash
   register: res
   check_mode: no
   failed_when: no
@@ -52,12 +55,15 @@
     - Change Java version
 
 - name: Install Groovy via sdkman
-  shell: bash -cl 'sdk install groovy {{ lang_groovy_version }}'
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install groovy {{ lang_groovy_version }}
   args:
+    executable: /bin/bash
     creates: "~/.sdkman/candidates/groovy/{{ lang_groovy_version }}/bin/groovy"
 
 - name: Check if Groovy version is "{{ lang_groovy_version }}"
-  shell: bash -cl 'sdk version groovy' | grep -F "* {{ lang_groovy_version }}"
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk current groovy | grep -F "{{ lang_groovy_version }}"
+  args:
+    executable: /bin/bash
   register: res
   check_mode: no
   failed_when: no
@@ -66,12 +72,15 @@
     - Change Groovy version
 
 - name: Install Scala via sdkman
-  shell: bash -cl 'sdk install scala {{ lang_scala_version }}'
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install scala {{ lang_scala_version }}
   args:
+    executable: /bin/bash
     creates: "~/.sdkman/candidates/scala/{{ lang_scala_version }}/bin/scala"
 
 - name: Check if Scala version is "{{ lang_scala_version }}"
-  shell: bash -cl 'sdk version scala' | grep -F "* {{ lang_scala_version }}"
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk current scala | grep -F "{{ lang_scala_version }}"
+  args:
+    executable: /bin/bash
   register: res
   check_mode: no
   failed_when: no
@@ -80,12 +89,15 @@
     - Change Scala version
 
 - name: Install Kotlin via sdkman
-  shell: bash -cl 'sdk install kotlin {{ lang_kotlin_version }}'
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install kotlin {{ lang_kotlin_version }}
   args:
+    executable: /bin/bash
     creates: "~/.sdkman/candidates/kotlin/{{ lang_kotlin_version }}/bin/kotlin"
 
 - name: Check if Kotlin version is "{{ lang_kotlin_version }}"
-  shell: bash -cl 'sdk version kotlin' | grep -F "* {{ lang_kotlin_version }}"
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk current kotlin | grep -F "{{ lang_kotlin_version }}"
+  args:
+    executable: /bin/bash
   register: res
   check_mode: no
   failed_when: no
@@ -94,12 +106,15 @@
     - Change Kotlin version
 
 - name: Install Gradle via sdkman
-  shell: bash -cl 'sdk install gradle {{ lang_gradle_version }}'
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install gradle {{ lang_gradle_version }}
   args:
+    executable: /bin/bash
     creates: "~/.sdkman/candidates/gradle/{{ lang_gradle_version }}/bin/gradle"
 
 - name: Check if Gradle version is "{{ lang_gradle_version }}"
-  shell: bash -cl 'sdk version gradle' | grep -F "* {{ lang_gradle_version }}"
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk current gradle | grep -F "{{ lang_gradle_version }}"
+  args:
+    executable: /bin/bash
   register: res
   check_mode: no
   failed_when: no

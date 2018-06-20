@@ -46,6 +46,7 @@ homebrew_packages:
   - { name: ghr }
   - { name: ghostscript }
   - { name: graphviz }
+  - { name: httpie }
   - { name: hub }
   - { name: imagemagick }
   - { name: jo }

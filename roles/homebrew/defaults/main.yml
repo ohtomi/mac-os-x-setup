@@ -55,6 +55,7 @@ homebrew_packages:
   - { name: peco }
   - { name: reattach-to-user-namespace }
   - { name: ohtomi/repos/sdkman-cli }
+  - { name: stern }
   - { name: terraform }
   - { name: tig }
   - { name: tmux }

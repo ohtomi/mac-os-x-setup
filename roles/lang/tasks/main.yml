@@ -123,7 +123,7 @@
     - Change Gradle version
 
 - name: Install sbt via sdkman
-  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install groovy {{ lang_sbt_version }}
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install sbt {{ lang_sbt_version }}
   args:
     executable: /bin/bash
     creates: "~/.sdkman/candidates/sbt/{{ lang_sbt_version }}/bin/sbt"

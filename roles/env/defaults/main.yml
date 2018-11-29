@@ -3,6 +3,5 @@ env_ghq_root: "{{ ansible_user_dir }}/src/github.com"
 
 env_git_repositories:
   - { repo: "ssh://git@github.com/ohtomi/dotfiles.git", dest: "{{ env_ghq_root }}/ohtomi/dotfiles" }
-  - { repo: "ssh://git@github.com/ohtomi/jupyter-notebook-notes.git", dest: "{{ env_ghq_root }}/ohtomi/jupyter-notebook-notes"}
 
 env_shell: /usr/local/bin/bash

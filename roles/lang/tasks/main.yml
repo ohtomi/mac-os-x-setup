@@ -33,6 +33,7 @@
   gem:
     name: "{{ item.name }}"
     include_doc: yes
+    user_install: False
     state: "{{ item.state | default('latest') }}"
   with_items:
     - "{{ lang_gem_packages }}"

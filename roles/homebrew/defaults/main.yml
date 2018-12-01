@@ -51,6 +51,7 @@ homebrew_packages:
   - { name: imagemagick }
   - { name: jo }
   - { name: jq }
+  - { name: kubernetes-helm }
   - { name: packer }
   - { name: peco }
   - { name: ohtomi/repos/sdkman-cli }

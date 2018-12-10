@@ -39,6 +39,7 @@ homebrew_packages:
   - { name: python }
   - { name: rbenv }
   # developer tool
+  - { name: consul }
   - { name: coreutils }
   - { name: curl }
   - { name: ffmpeg }

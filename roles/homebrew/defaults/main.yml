@@ -61,6 +61,7 @@ homebrew_packages:
   - { name: tig }
   - { name: tmux }
   - { name: tree }
-  - { name: vault }
+  # see. https://github.com/Homebrew/homebrew-core/pull/34755
+  - { name: ohtomi/repos/vault }
   - { name: vim }
   - { name: wget }

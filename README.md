@@ -13,11 +13,13 @@ $ cd ~/src/github.com/ohtomi/mac-os-x-setup
 $ brew update
 $ brew install ansible
 $ ansible-playbook site.yml -vv --ask-become-pass
+# or
+$ ansible-playbook site.yml -vv --extra-vars="@private.yml"
 ```
 
 ## License
 
-MIT
+[MIT](https://ohtomi.mit-license.org)
 
 ## Author
 

@@ -1,5 +1,6 @@
 ---
 lang_go_packages:
+  - { name: dlv, path: github.com/derekparker/delve/cmd/dlv }
   - { name: go-assets-builder, path: github.com/jessevdk/go-assets-builder }
   - { name: godoc, path: golang.org/x/tools/cmd/godoc }
   - { name: goimports, path: golang.org/x/tools/cmd/goimports }

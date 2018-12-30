@@ -2,6 +2,7 @@
 homebrew_taps:
   - { tap: caskroom/cask }
   - { tap: ohtomi/repos }
+  - { tap: Songmu/tap }
   - { tap: tcnksm/ghr }
 
 homebrew_cask_packages:
@@ -43,6 +44,7 @@ homebrew_packages:
   - { name: coreutils }
   - { name: curl }
   - { name: ffmpeg }
+  - { name: Songmu/tap/ghg }
   - { name: ghq, install_options: completions }
   - { name: ghr }
   - { name: ghostscript }

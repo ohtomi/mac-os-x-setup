@@ -58,6 +58,7 @@ homebrew_packages:
   - { name: packer }
   - { name: peco }
   - { name: ohtomi/repos/sdkman-cli }
+  - { name: skaffold }
   - { name: stern }
   - { name: terraform }
   - { name: tig }

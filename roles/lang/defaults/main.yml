@@ -36,7 +36,7 @@ lang_gem_packages:
   - { name: rake }
   - { name: travis }
 
-lang_java_version: 11.0.0-open
+lang_java_version: 11.0.3-amzn
 
 lang_groovy_version: 2.4.9
 

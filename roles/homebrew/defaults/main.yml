@@ -1,6 +1,7 @@
 ---
 homebrew_taps:
   - { tap: caskroom/cask }
+  - { tap: heroku/brew }
   - { tap: ohtomi/repos }
   - { tap: Songmu/tap }
   - { tap: tcnksm/ghr }
@@ -49,6 +50,7 @@ homebrew_packages:
   - { name: ghr }
   - { name: ghostscript }
   - { name: graphviz }
+  - { name: heroku }
   - { name: httpie }
   - { name: hub }
   - { name: imagemagick }

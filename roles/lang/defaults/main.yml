@@ -15,6 +15,7 @@ lang_go_packages:
 lang_pip_packages:
   - { name: awscli }
   - { name: bokeh }
+  - { name: boto3 }
   - { name: matplotlib }
   - { name: nose }
   - { name: numpy }

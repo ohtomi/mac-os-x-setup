@@ -26,6 +26,9 @@ lang_pip_packages:
   - { name: seaborn }
   - { name: pipenv }
   - { name: pyre-check }
+  - { name: tensorflow }
+  - { name: torch }
+  - { name: torchvision }
   - { name: tox }
   - { name: twine }
   - { name: wheel }

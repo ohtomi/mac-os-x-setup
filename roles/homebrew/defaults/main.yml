@@ -1,5 +1,6 @@
 ---
 homebrew_taps:
+  - { tap: homebrew/cask-versions }
   - { tap: caskroom/cask }
   - { tap: heroku/brew }
   - { tap: ohtomi/repos }
@@ -13,6 +14,7 @@ homebrew_cask_packages:
   - { name: iterm2 }
   - { name: visual-studio-code }
   - { name: google-chrome }
+  - { name: google-chrome-canary }
   - { name: jetbrains-toolbox }
   - { name: docker }
   # other tool

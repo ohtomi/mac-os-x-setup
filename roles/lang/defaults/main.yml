@@ -25,7 +25,7 @@ lang_pip_packages:
   - { name: scikit-learn }
   - { name: seaborn }
   - { name: pipenv }
-  - { name: poetry }
+  - { name: poetry, extra_args: --user }
   - { name: pyre-check }
   - { name: tensorflow }
   - { name: torch }

@@ -3,6 +3,7 @@ homebrew_taps:
   - { tap: homebrew/cask-versions }
   - { tap: caskroom/cask }
   - { tap: heroku/brew }
+  - { tap: k1LoW/tap }
   - { tap: ohtomi/repos }
   - { tap: Songmu/tap }
   - { tap: tcnksm/ghr }
@@ -64,6 +65,7 @@ homebrew_packages:
   - { name: ohtomi/repos/sdkman-cli }
   - { name: skaffold }
   - { name: stern }
+  - { name: k1LoW/tap/tbls }
   - { name: terraform }
   - { name: tig }
   - { name: tmux }

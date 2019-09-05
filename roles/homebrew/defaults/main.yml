@@ -47,6 +47,7 @@ homebrew_packages:
   - { name: consul }
   - { name: coreutils }
   - { name: curl }
+  - { name: k1LoW/tap/evry }
   - { name: ffmpeg }
   - { name: Songmu/tap/ghg }
   - { name: ghq, install_options: completions }

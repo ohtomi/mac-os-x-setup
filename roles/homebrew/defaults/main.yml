@@ -49,6 +49,7 @@ homebrew_packages:
   - { name: curl }
   - { name: k1LoW/tap/evry }
   - { name: ffmpeg }
+  - { name: k1LoW/tap/filt }
   - { name: Songmu/tap/ghg }
   - { name: ghq, install_options: completions }
   - { name: ghr }

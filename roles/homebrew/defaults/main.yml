@@ -44,6 +44,7 @@ homebrew_packages:
   - { name: python }
   - { name: rbenv }
   # developer tool
+  - { name: k1LoW/tap/colr }
   - { name: consul }
   - { name: coreutils }
   - { name: curl }

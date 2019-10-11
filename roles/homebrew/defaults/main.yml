@@ -21,7 +21,6 @@ homebrew_cask_packages:
   # other tool
   - { name: amazon-drive }
   - { name: gyazo }
-  - { name: kindle }
 
 homebrew_packages:
   # shell

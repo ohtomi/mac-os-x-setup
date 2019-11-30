@@ -1,0 +1,12 @@
+---
+- name: Install node.js
+  hosts: localhost
+  connection: local
+  roles:
+    - role: homebrew
+      vars:
+        homebrew_taps:
+          - { tap: ohtomi/repos }
+        homebrew_cask_packages: []
+        homebrew_packages:
+          - { name: ohtomi/repos/nodebrew }

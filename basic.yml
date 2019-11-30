@@ -1,0 +1,20 @@
+---
+- name: Install basic applications
+  hosts: localhost
+  connection: local
+  roles:
+    - role: homebrew
+      vars:
+        homebrew_taps:
+          - { tap: homebrew/cask-versions }
+          - { tap: caskroom/cask }
+        homebrew_cask_packages:
+          - { name: amazon-drive }
+          - { name: google-chrome }
+          - { name: google-chrome-canary }
+          - { name: google-japanese-ime }
+          - { name: gyazo }
+          # - { name: iterm2 }
+          - { name: jetbrains-toolbox }
+          - { name: visual-studio-code }
+        homebrew_packages: []

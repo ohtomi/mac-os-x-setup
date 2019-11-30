@@ -1,0 +1,15 @@
+---
+- name: Install kubernetes products
+  hosts: localhost
+  connection: local
+  roles:
+    - role: homebrew
+      vars:
+        homebrew_taps:
+          - { tap: homebrew/cask-versions }
+          - { tap: caskroom/cask }
+        homebrew_cask_packages: []
+        homebrew_packages:
+          - { name: kubernetes-helm }
+          - { name: skaffold }
+          - { name: stern }

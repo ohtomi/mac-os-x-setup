@@ -1,0 +1,35 @@
+---
+- name: Install developer tools
+  hosts: localhost
+  connection: local
+  roles:
+    - role: homebrew
+      vars:
+        homebrew_taps:
+          - { tap: homebrew/cask-versions }
+          - { tap: caskroom/cask }
+          - { tap: Songmu/tap }
+          - { tap: tcnksm/ghr }
+        homebrew_cask_packages:
+          - { name: docker }
+        homebrew_packages:
+          # shell
+          - { name: bash }
+          - { name: zsh }
+          # version control system
+          - { name: git }
+          - { name: mercurial }
+          - { name: subversion }
+          # openssl
+          - { name: readline }
+          - { name: openssl }
+          - { name: openssl, state: linked, install_options: force }
+          # tool
+          - { name: coreutils }
+          - { name: curl }
+          - { name: Songmu/tap/ghg }
+          - { name: ghq }
+          - { name: tcnksm/ghr/ghr }
+          - { name: peco }
+          - { name: vim }
+          - { name: wget }

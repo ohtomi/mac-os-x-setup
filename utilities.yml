@@ -7,7 +7,6 @@
       vars:
         homebrew_taps:
           - { tap: homebrew/cask-versions }
-          - { tap: caskroom/cask }
           - { tap: heroku/brew }
           - { tap: k1LoW/tap }
         homebrew_cask_packages: []

@@ -7,7 +7,6 @@
       vars:
         homebrew_taps:
           - { tap: homebrew/cask-versions }
-          - { tap: caskroom/cask }
           - { tap: Songmu/tap }
           - { tap: tcnksm/ghr }
         homebrew_cask_packages:

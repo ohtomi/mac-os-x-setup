@@ -1,0 +1,9 @@
+---
+nodebrew_remote_script: https://git.io/nodebrew
+nodebrew_check_nodebrew: "test -e {{ ansible_user_dir }}/.nodebrew/current/bin"
+
+nodebrew_node_version: v12.13.1
+nodebrew_nodebrew_exe: "{{ ansible_user_dir }}/.nodebrew/current/bin/nodebrew"
+nodebrew_check_node: "test -e {{ ansible_user_dir }}/.nodebrew/node/{{ nodebrew_node_version }}"
+nodebrew_npm_exe: "{{ ansible_user_dir }}/.nodebrew/node/{{ nodebrew_node_version }}/bin/npm"
+nodebrew_npm_completion: "{{ ansible_user_dir }}/.zfunc/_npm"

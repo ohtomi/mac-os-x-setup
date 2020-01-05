@@ -5,8 +5,8 @@
   roles:
     - role: homebrew
       vars:
-        homebrew_taps:
-          - { tap: ohtomi/repos }
-        homebrew_cask_packages: []
-        homebrew_packages:
-          - { name: ohtomi/repos/sdkman-cli }
+        homebrew_taps: []
+        homebrew_cask_packages:
+          - { name: corretto }
+        homebrew_packages: []
+    - role: java-sdkman

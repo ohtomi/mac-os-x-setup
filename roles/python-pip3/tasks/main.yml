@@ -1,0 +1,12 @@
+---
+- name: Check poetry exists
+  command: "{{ pip3_check_pip3 }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+
+- name: Generate poetry completion
+  shell:
+    cmd: "{{ pip3_pip3_exe }} completion --zsh >{{ pip3_pip3_completion }}"
+  when: res is changed

@@ -1,0 +1,12 @@
+---
+- name: Check sdkman exists
+  command: "{{ sdkman_check_sdk }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+
+- name: Run installer
+  shell:
+    cmd: curl -L "{{ sdkman_remote_script }}" | zsh
+  when: res is changed

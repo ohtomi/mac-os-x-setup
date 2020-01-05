@@ -1,0 +1,2 @@
+---
+zsh_completion_directory: "{{ ansible_user_dir }}/.zfunc"

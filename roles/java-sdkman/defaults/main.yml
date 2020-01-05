@@ -1,0 +1,3 @@
+---
+sdkman_remote_script: https://get.sdkman.io
+sdkman_check_sdk: "test -e {{ ansible_user_dir }}/.sdkman/bin/sdkman-init.sh"

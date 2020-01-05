@@ -1,0 +1,34 @@
+---
+- name: Check nodebrew exists
+  command: "{{ nodebrew_check_nodebrew }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+
+- name: Run installer
+  shell:
+    cmd: curl -L "{{ nodebrew_remote_script }}" | perl - setup
+  when: res is changed
+
+- name: Check nodejs installed
+  command: "{{ nodebrew_check_node }}"
+  register: res
+  check_mode: no
+  failed_when: no
+  changed_when: res.rc != 0
+
+- name: Install {{ nodebrew_node_version }}
+  shell:
+    cmd: "{{ nodebrew_nodebrew_exe }} install {{ nodebrew_node_version }}"
+  when: res is changed
+
+- name: Set global version to {{ nodebrew_node_version }}
+  shell:
+    cmd: "{{ nodebrew_nodebrew_exe }} use {{ nodebrew_node_version }}"
+  when: res is changed
+
+- name: Generate npm completion
+  shell:
+    cmd: "{{ nodebrew_npm_exe }} completion --zsh >{{ nodebrew_npm_completion }}"
+  when: res is changed

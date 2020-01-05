@@ -32,3 +32,4 @@
           - { name: peco }
           - { name: vim }
           - { name: wget }
+    - role: zsh-completions

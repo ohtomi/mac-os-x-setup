@@ -9,3 +9,5 @@
         homebrew_cask_packages: []
         homebrew_packages:
           - { name: python }
+    - role: python-pip3
+    - role: python-poetry

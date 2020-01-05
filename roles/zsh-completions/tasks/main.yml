@@ -1,0 +1,5 @@
+---
+- name: Create base directory
+  file:
+    path: "{{ zsh_completion_directory }}"
+    state: directory

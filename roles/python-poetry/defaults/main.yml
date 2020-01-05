@@ -1,0 +1,7 @@
+---
+poetry_remote_repo: https://github.com/python-poetry/poetry
+poetry_local_repo: "{{ ansible_user_dir }}/src/github.com/python-poetry/poetry"
+
+poetry_check_poetry: "test -e {{ ansible_user_dir }}/.poetry/env"
+poetry_poetry_exe: "{{ ansible_user_dir }}/.poetry/bin/poetry"
+poetry_poetry_completion: "{{ ansible_user_dir }}/.zfunc/_poetry"

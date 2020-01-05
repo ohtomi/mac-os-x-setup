@@ -1,0 +1,4 @@
+---
+pip3_check_pip3: "test -e /usr/local/bin/pip3"
+pip3_pip3_exe: /usr/local/bin/pip3
+pip3_pip3_completion: "{{ ansible_user_dir }}/.zfunc/_pip3"

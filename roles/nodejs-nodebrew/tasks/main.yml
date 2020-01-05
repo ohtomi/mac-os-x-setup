@@ -11,6 +11,12 @@
     cmd: curl -L "{{ nodebrew_remote_script }}" | perl - setup
   when: res is changed
 
+- name: Link to nodebrew completion
+  file:
+    src: "{{ nodebrew_nodebrew_completion_src }}"
+    dest: "{{ nodebrew_nodebrew_completion_dest }}"
+    state: link
+
 - name: Check nodejs installed
   command: "{{ nodebrew_check_node }}"
   register: res

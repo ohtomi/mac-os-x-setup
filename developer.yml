@@ -28,6 +28,7 @@
           - { name: curl }
           - { name: Songmu/tap/ghg }
           - { name: ghq }
+          - { name: gtk-mac-integration }
           - { name: tcnksm/ghr/ghr }
           - { name: peco }
           - { name: vim }

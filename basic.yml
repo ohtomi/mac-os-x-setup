@@ -16,4 +16,5 @@
           - { name: jetbrains-toolbox }
           - { name: visual-studio-code }
           - { name: kindle }
+          - { name: zoom }
         homebrew_packages: []

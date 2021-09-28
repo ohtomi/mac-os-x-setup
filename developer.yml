@@ -26,6 +26,7 @@
           # tool
           - { name: coreutils }
           - { name: curl }
+          - { name: gh }
           - { name: Songmu/tap/ghg }
           - { name: ghq }
           - { name: gtk-mac-integration }

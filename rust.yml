@@ -1,0 +1,11 @@
+---
+- name: Install rust
+  hosts: localhost
+  connection: local
+  roles:
+    - role: homebrew
+      vars:
+        homebrew_taps: []
+        homebrew_cask_packages: []
+        homebrew_packages:
+          - { name: rustup }

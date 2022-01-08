@@ -9,4 +9,3 @@
         homebrew_cask_packages: []
         homebrew_packages:
           - { name: go }
-          - { name: dep }

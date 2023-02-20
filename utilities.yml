@@ -11,19 +11,19 @@
           - { tap: k1LoW/tap }
         homebrew_cask_packages: []
         homebrew_packages:
-          - { name: k1LoW/tap/colr }
-          - { name: k1LoW/tap/evry }
           - { name: ffmpeg }
-          - { name: k1LoW/tap/filt }
           - { name: ghostscript }
           - { name: graphviz }
-          - { name: k1LoW/tap/harvest }
           - { name: heroku/brew/heroku }
           - { name: httpie }
           - { name: hub }
           - { name: imagemagick }
           - { name: jo }
           - { name: jq }
+          - { name: k1LoW/tap/colr }
+          - { name: k1LoW/tap/evry }
+          - { name: k1LoW/tap/filt }
+          - { name: k1LoW/tap/harvest }
           - { name: k1LoW/tap/tbls }
           - { name: tig }
           - { name: tmux }

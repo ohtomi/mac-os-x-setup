@@ -11,6 +11,7 @@
           - { tap: tcnksm/ghr }
         homebrew_cask_packages:
           - { name: docker }
+          - { name: figma }
         homebrew_packages:
           # shell
           - { name: bash }
@@ -27,11 +28,11 @@
           - { name: coreutils }
           - { name: curl }
           - { name: gh }
-          - { name: Songmu/tap/ghg }
           - { name: ghq }
           - { name: gtk-mac-integration }
-          - { name: tcnksm/ghr/ghr }
           - { name: peco }
+          - { name: Songmu/tap/ghg }
+          - { name: tcnksm/ghr/ghr }
           - { name: vim }
           - { name: wget }
     - role: zsh-completions

@@ -15,7 +15,6 @@
           - { name: iterm2 }
           - { name: jetbrains-toolbox }
           - { name: visual-studio-code }
-          - { name: kindle }
           - { name: slack }
           - { name: zoom }
         homebrew_packages: []

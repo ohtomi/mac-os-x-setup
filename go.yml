@@ -7,5 +7,4 @@
       vars:
         homebrew_taps: []
         homebrew_cask_packages: []
-        homebrew_packages:
-          - { name: go }
+        homebrew_packages: []

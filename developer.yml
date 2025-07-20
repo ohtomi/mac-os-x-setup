@@ -30,6 +30,7 @@
           - { name: gh }
           - { name: ghq }
           - { name: gtk-mac-integration }
+          - { name: ngrok }
           - { name: peco }
           - { name: Songmu/tap/ghg }
           - { name: tcnksm/ghr/ghr }
